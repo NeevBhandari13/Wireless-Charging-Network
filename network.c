@@ -120,7 +120,7 @@ int checkNodeAvailability(int ports[NUM_PORTS]) {
 
 void write_report_to_file(const Report *report, const char *filename, int iteration, int node_rank) {
     // Open the file in append mode
-    FILE *file = fopen(filename, "a"); // "a" means append, creates the file if it doesn't exist
+    FILE *file = fopen(filename, "a"); 
     if (file == NULL) {
         perror("Error opening file");
         return;
